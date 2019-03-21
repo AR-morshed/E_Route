@@ -1,0 +1,67 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.arman.e_route.PathActivity">
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Enter origin address"
+        android:id="@+id/etOrigin"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Enter destination address"
+        android:id="@+id/etDestination"/>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/btnFindPath"
+        android:text="Find path"/>
+
+    <ImageView
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:src="@drawable/ic_distance"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/tvDistance"
+        android:text="0 km"
+        android:layout_marginLeft="5dp"/>
+
+    <ImageView
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:src="@drawable/ic_clock"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:padding="5dp"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/tvDuration"
+        android:text="0 min"
+        android:layout_marginLeft="5dp"/>
+
+</LinearLayout>
+
+
+    <fragment
+        android:id="@+id/map2"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
